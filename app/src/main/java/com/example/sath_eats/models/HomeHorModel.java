@@ -9,6 +9,9 @@ public class HomeHorModel {
         this.name = name;
     }
 
+    public HomeHorModel() {
+    }
+
     public int getImage() {
         return image;
     }
