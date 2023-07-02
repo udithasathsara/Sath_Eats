@@ -13,14 +13,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.sath_eats.R;
 import com.example.sath_eats.models.HomeVerModel;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHolder> {
 
     Context context;
-    List<HomeVerModel> list;
+    ArrayList<HomeVerModel> list;
 
-    public HomeVerAdapter(Context context, List<HomeVerModel> list) {
+    public HomeVerAdapter(Context context, ArrayList<HomeVerModel> list) {
         this.context = context;
         this.list = list;
     }

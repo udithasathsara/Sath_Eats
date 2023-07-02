@@ -1,10 +1,10 @@
-package com.example.sath_eats.ui.slideshow;
+package com.example.sath_eats.ui.favourite;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import com.example.sath_eats.databinding.FragmentFavouriteBinding;
