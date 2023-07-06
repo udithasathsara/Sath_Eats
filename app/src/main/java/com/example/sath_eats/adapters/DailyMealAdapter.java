@@ -1,6 +1,7 @@
 package com.example.sath_eats.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sath_eats.R;
+import com.example.sath_eats.activities.DetailedDailyMealActivity;
 import com.example.sath_eats.models.DailyMealModel;
 
 import java.util.List;
@@ -37,6 +39,15 @@ public class DailyMealAdapter extends RecyclerView.Adapter<DailyMealAdapter.view
         holder.name.setText(list.get(position).getName());
         holder.discount.setText(list.get(position).getDiscount());
         holder.description.setText(list.get(position).getDescription());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, DetailedDailyMealActivity.class);
+                intent.putExtra("type",list.get(position).getType());
+                context.startActivity(intent);
+            }
+        });
 
     }
 
